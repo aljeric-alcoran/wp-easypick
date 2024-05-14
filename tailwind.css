@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+   font-family: 'SoinSansNeue';
+   font-style: normal;
+   font-weight: 500;
+   src: url('./fonts/medium/SoinSansNeue-medium.woff') format('woff'),
+      url('./fonts/medium/SoinSansNeue-medium.woff2') format('woff2');
+}
+   
+   @font-face {
+   font-family: 'SoinSansNeue';
+   font-style: bold;
+   font-weight: 600;
+   src: url('./fonts/bold/SoinSansNeue-bold.woff') format('woff'),
+      url('./fonts/bold/SoinSansNeue-bold.woff2') format('woff2');
+}
+   
+   @font-face {
+   font-family: 'SoinSansNeue';
+   font-style: light;
+   font-weight: 400;
+   src: url('./fonts/light/SoinSansNeue-Light.woff') format('woff'),
+      url('./fonts/light/SoinSansNeue-Light.woff2') format('woff2');
+}
+
+@tailwind utilities;
+
+
+
+html {
+   @apply font-default tracking-wide font-normal
+}
+
+nav.main-navigation {
+   @apply flex justify-around items-center w-full max-w-[1320px] font-normal text-sm tracking-wide;
+}
+
+div.nav_button-container {
+   @apply flex gap-2 items-end justify-center
+}
+
+div.nav_login-btn, div.nav_signup-btn {
+   @apply rounded-md px-5 py-2 cursor-pointer
+}
+
+div.nav_login-btn {
+   @apply border border-white
+}
+
+div.nav_signup-btn {
+   @apply border border-primary bg-primary
+}
+
+.menu {
+   @apply flex list-none gap-7 items-center uppercase
+}

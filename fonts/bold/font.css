@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SoinSansNeue-Bold';
+  src: url('SoinSansNeue-Bold.eot');
+  src: url('SoinSansNeue-Bold.eot?#iefix') format('embedded-opentype'),
+       url('SoinSansNeue-Bold.svg#SoinSansNeue-Bold') format('svg'),
+       url('SoinSansNeue-Bold.ttf') format('truetype'),
+       url('SoinSansNeue-Bold.woff') format('woff'),
+       url('SoinSansNeue-Bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

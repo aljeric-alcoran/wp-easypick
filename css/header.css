@@ -1,0 +1,220 @@
+div.main-container {
+   position: absolute;
+   width: 100%;
+   box-shadow: 0 1px 4px #323333;
+   background-color: #323333;
+}
+div.header-wrapper {
+   margin: 0 0;
+   padding: 0.5rem 5rem;
+   z-index: 30;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+div.content-wrapper {
+   width: 100%;
+   max-width: 1440px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+div.dropdown-menu-list {
+   width: 100%;
+   margin: 0 0;
+   padding: 0;
+   margin: auto;
+   display: grid;
+   grid-template-rows: 0fr;
+   transition: grid-template-rows 200ms ease-in-out;
+   overflow: hidden;
+}
+
+div.dropdown-menu-list > div.dropdown-content {
+   overflow: hidden;
+   width: 100%;
+   max-width: 1440px;
+   margin: auto;
+   -ms-overflow-style: none; 
+   scrollbar-width: none;
+}
+
+div.dropdown-content::-webkit-scrollbar {
+   display: none;
+}
+
+
+
+ul.inline li a {
+   text-decoration: none;
+   color: #fff;
+   text-transform: uppercase;
+   font-size: 1.5rem;
+   
+}
+
+div.btn-wrapper {
+   display: flex;
+   gap: 10px;
+}
+
+div.signup-btn,
+div.login-btn {
+   padding: 8px 20px 5px 20px;
+   border-radius: 30px;
+   cursor: pointer;
+   font-size: 1.3rem;
+   color: #EBEBEB;
+   text-transform: uppercase;
+}
+
+div.signup-btn {
+   border: 2px solid #EBEBEB;
+}
+
+div.login-btn {
+   border: 2px solid #F37C20;
+   background-color: #F37C20;
+}
+
+div.btn-wrapper-mobile {
+   display: flex;
+   gap: 10px;
+   padding: 25px 50px;
+}
+
+div.signup-btn-mobile,
+div.login-btn-mobile {
+   width: 100%;
+   padding: 8px 20px 5px 20px;
+   cursor: pointer;
+   font-size: 1.3rem;
+   color: #EBEBEB;
+   text-transform: uppercase;
+   text-align: center;
+   border-radius: 5px;
+}
+
+div.signup-btn-mobile {
+   border: 1px solid #EBEBEB;
+}
+
+div.login-btn-mobile {
+   border: 1px solid #F37C20;
+   background-color: #F37C20;
+}
+
+div.burger-menu {
+   display: none;
+   margin-top: 5px;
+}
+
+div.slider-menu {
+   background-color: #2B2B2B;
+   position: fixed;
+   top: 0;
+   right: 0;
+   z-index: 100;
+   height: 100%;
+   width: 0;
+   transition: width 0.4s;
+   padding-top: 10px;
+   overflow: scroll;
+}
+
+div.slider-menu a {
+   color: #fff;
+   font-size: 2rem;
+   text-decoration: none;
+   display: block;
+   padding: 2.5rem 5rem;
+   width: 76%;
+}
+
+.close {
+   cursor: pointer;
+   position: absolute;
+   top: 10px;
+   right: 16px;
+   fill: #fff;
+   width: 34px;
+   height: 34px;
+   opacity: 0;
+   transition: opacity 0.4s;
+   transition-delay: 0.2s;
+}
+
+div.mobile-submenu-wrapper {
+   display: grid;
+   grid-template-rows: 0fr;
+   transition: grid-template-rows 500ms ease;
+}
+
+.mobile-submenu-wrapper ul {
+   background-color: #1a1a1a;
+   list-style-type: none;
+   margin: 0;
+   overflow: hidden;
+}
+
+ul.mobile-submenu li {
+   line-height: 150%;
+   cursor: pointer;
+   padding: 24px 0 24px 32px;
+   position: relative;
+}
+
+ul.mobile-submenu li a {
+   padding: 0;
+}
+
+.dropdown-icon {
+   position: absolute;
+   padding: 0 3px;
+   transition: all 0.4s ease;
+}
+
+.article-menu {
+   padding: 5rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 42px;
+   color: #fff;
+}
+
+.article-option {
+   display: flex; 
+   align-items: start; 
+   gap: 18px;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.article-menu div {
+   padding-right: 50px;
+}
+
+.article-desc {
+   margin: 5px 0;
+   color: #A7ABAB;
+}
+
+h3.title {
+   color: #fff;
+   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+   div.header-wrapper {
+      padding: 1rem 2rem;
+   }
+
+   ul.inline {
+      gap: 24px;
+   }
+
+   .article-menu div {
+      padding-right: 20px;
+   }
+}
